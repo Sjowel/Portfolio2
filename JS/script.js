@@ -19,4 +19,4 @@ function showNextProject() {
 projects[currentProject].style.display = 'block';
 
 // Rotate projects every 5 seconds
-setInterval(showNextProject, displayTime);
+setInterval(showNextProject, displayTime);  

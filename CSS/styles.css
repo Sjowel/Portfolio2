@@ -113,7 +113,8 @@ body, html {
 .project {
     display: none;
     text-align: center;
-    background-color: rgba(168, 187, 181, 0.8);
+    background-color: rgba(168, 187, 181, 0.7); 
+    border: 2px solid rgba(96, 174, 150, 1);
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px; /* Add padding for aesthetics */
@@ -121,7 +122,7 @@ body, html {
 }
 
 .project:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.03); /* Slightly enlarge on hover */
 }
 
 .project img {
@@ -142,8 +143,9 @@ p {
 
 .read-more {
     text-decoration: none;
-    color: white;
-    background-color: #007bff;
+    color: black;
+    background-color: #fff9e8;
+    border: 2px solid #fae9bc;
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -151,7 +153,8 @@ p {
 }
 
 .read-more:hover {
-    background-color: #0056b3;
+    background-color: #fae9bc;
+    transform: scale(1.03);
 }
 
 .outcome-container {
@@ -170,6 +173,7 @@ p {
     min-width: 550px;
     overflow: hidden;
     position: relative;
+    transition: transform 0.3s;
 }
   
 .outcomes-wrapper {
@@ -188,6 +192,7 @@ p {
     box-shadow: 0 5px 15px rgba(168, 187, 181, 0.7);
     background-color: rgba(168, 187, 181, 1);
     transition: box-shadow, background-color 0.3s ease-in-out;
+    transform: scale(1.03);
 
 }
 
