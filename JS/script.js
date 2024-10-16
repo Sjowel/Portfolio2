@@ -1,7 +1,7 @@
 // Select all project elements
 const projects = document.querySelectorAll('.project');
 let currentProject = 0;
-const displayTime = 5000; // 5000ms = 5 seconds
+const displayTime = 3500; // 5000ms = 5 seconds
 
 // Function to rotate projects
 function showNextProject() {
