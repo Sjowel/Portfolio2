@@ -40,6 +40,7 @@ body, html {
 .navbar a:hover {
     text-decoration: underline;
 }
+
 .landing-image {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #fff9e8 100%), url('/images/Maastricht.png');
     height: 100vh;
@@ -99,15 +100,18 @@ body, html {
     min-height: 100vh;
     text-align: left;
     font-size: 18px;
+    margin-bottom: 100px;
 }
+
 .project-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
     position: relative;
     flex-direction: column;
     gap: 20px;
+    scroll-margin-top: 100px;
 }
 
 .project {
@@ -115,8 +119,8 @@ body, html {
     text-align: center;
     background-color: rgba(168, 187, 181, 0.7); 
     border: 2px solid rgba(96, 174, 150, 1);
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    box-shadow: 0 1px 15px rgba(96, 174, 150, 0.5); 
     padding: 20px;
     transition: transform 0.3s;
     height: 400px;
@@ -126,18 +130,14 @@ body, html {
 }
 
 
-.project:hover {
-    transform: scale(1.03);
-}
-
-
 h2 {
     font-size: 2em;
-    margin: 10px 0;
+
 }
 
 p {
     font-size: 1.2em;
+
 }
 
 .read-more {
@@ -146,24 +146,24 @@ p {
     background-color: #fff9e8;
     border: 2px solid #fae9bc;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: inline-block;
     transition: background-color 0.3s;
     position: absolute; 
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -60px;
 }
 
 .read-more:hover {
     background-color: #fae9bc;
-    transform: scale(1.03);
+
 }
 
 .circle-loader {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 250px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
