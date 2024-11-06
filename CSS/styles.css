@@ -338,3 +338,25 @@ p {
 .right-arrow {
     right: 20px;
 }
+
+.projectpage {
+    padding-right: 350px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.projectpage h2 {
+    font-size: 1.7em;
+}
+
+.projectpage a {
+    color: rgba(168, 187, 181, 1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.projectpage a:hover {
+    color: #417464;
+}
