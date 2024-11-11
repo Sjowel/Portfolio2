@@ -2,7 +2,7 @@
 const projects = document.querySelectorAll('.project');
 const loader = document.querySelector('.circle-loader'); // Select the circle
 let currentProject = 0;
-const displayTime = 3500; // 3500ms = 3.5 seconds
+const displayTime = 5000; // 5000ms = 5 seconds
 
 // Function to show the project at a given index
 function showProject(index) {

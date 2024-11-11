@@ -219,7 +219,7 @@ p {
     height: 50px;
     border-radius: 50%;
     background-color: rgba(96, 174, 150, 1);
-    animation: fade-out 3.5s linear forwards;
+    animation: fade-out 5s linear forwards;
     opacity: 1;
     z-index: 10;
 }
