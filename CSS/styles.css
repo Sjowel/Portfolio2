@@ -171,7 +171,6 @@ body, html {
     overflow: hidden;
     position: relative;
 }
-
 h1{ 
     color: #60ae96;
     font-size: 2em;
@@ -364,4 +363,27 @@ p {
 
 .projectpage a:hover {
     color: #417464;
+}
+/* Stijl voor de scrollbalk */
+::-webkit-scrollbar {
+    width: 15px; /* Breedte voor een verticale scrollbar */
+    height: 15px; /* Hoogte voor een horizontale scrollbar */
+}
+
+/* Stijl voor de "thumb" (het schuifdeel) van de scrollbalk */
+::-webkit-scrollbar-thumb {
+    background-color: #A8BBB5;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Dit creëert een rand rond de scrollbar */
+}
+
+/* Stijl voor de "track" (het gebied waar de scrollbar beweegt) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Stijl voor de "hover" toestand van de thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #76a496;
 }
