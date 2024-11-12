@@ -19,8 +19,15 @@
     </nav>
     <section class="landing-image">
         <div class="overlay"></div>
-        <img class="overlay-image" src="/images/MaastrichtNaam.png" alt="Overlay Image">
+        <img class="overlay-image" src="/images/MaastrichtNaam.png" alt="Overlay Image" usemap="#image-map">
         <a href="#About" class="about-button">🔥About</a>
+    
+        <!-- Definieer een map voor de klikbare gebieden op de afbeelding -->
+        <map name="image-map">
+            <!-- Stel het gebied in dat je klikbaar wilt maken (bijvoorbeeld 1/3 van de afbeelding) -->
+            <area shape="rect" coords="1260,305,722,410" href="easteregg.html" alt="Klik hier" title="Klik om naar de nieuwe pagina te gaan">
+        </map>
+
     </section>
     <section class="about" id="About">
         <h1>Hi, I'm Joëlle de Vlam,</h1>
