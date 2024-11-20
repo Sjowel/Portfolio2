@@ -216,7 +216,7 @@ color: #1f3830;
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: #1f3830;
 }
 p {
@@ -432,9 +432,10 @@ p {
 
 /* Project pagina's design */
 .projectpage {
-    padding-right: 350px;
-    padding-left: 50px;
-    padding-bottom: 50px;
+    position: absolute;
+    top: 320px;
+    left: 350px;
+    transform: translate(-20%, -20%);
 }
 
 .projectpage h2 {
