@@ -199,9 +199,11 @@ body, html {
     padding: 20px;
     transition: transform 0.3s;
     height: 400px;
+    width: 600px;
     overflow: hidden;
     position: relative;
     z-index: 10;
+    box-sizing: border-box;
 }
 h1{ 
     color: #60ae96;
@@ -265,7 +267,7 @@ p {
 .circle-loader {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 170px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -490,7 +492,28 @@ ul.custom-bullets li::before {
     filter: hue-rotate(180deg) saturate(0.3) brightness(1.2)
 }
 
-/* Easter egg pagina design */
+/* dots onder de projecten */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.2); /* Inactieve stipjes */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: rgba(96, 174, 150, 1); /* Actieve stipjes */
+}
+
+/* Easter egg pagina */
 .easteregg{
     background-color: rgb(255, 145, 145);
 }

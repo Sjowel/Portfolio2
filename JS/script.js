@@ -1,21 +1,32 @@
-// Select all project elements
+// Select all project elements and other elements
 const projects = document.querySelectorAll('.project');
-const loader = document.querySelector('.circle-loader'); // Select the circle
+const loader = document.querySelector('.circle-loader');
+const dots = document.querySelectorAll(".dot"); // Select all dots
 let currentProject = 0;
 const displayTime = 5000; // 5000ms = 5 seconds
 
 // Function to show the project at a given index
 function showProject(index) {
-    // Hide the current project
-    projects[currentProject].style.display = 'none';
+    // Hide all projects
+    projects.forEach(project => project.style.display = 'none');
+    // Show the new project
+    projects[index].style.display = 'block';
     // Update the current project index
     currentProject = index;
-    // Show the new project
-    projects[currentProject].style.display = 'block';
     // Reset the circle loader animation
     loader.style.animation = 'none'; // Stops the current animation
     void loader.offsetWidth; // Trigger reflow to start the animation again
     loader.style.animation = 'fade-out 3.5s linear forwards'; // Start the animation again
+    // Update the active dot
+    updateActiveDot(index);
+}
+
+// Function to update active dot
+function updateActiveDot(index) {
+    dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[index]) {
+        dots[index].classList.add("active");
+    }
 }
 
 // Function to show the next project
@@ -30,8 +41,9 @@ function showPreviousProject() {
 
 // Initial display of the first project
 projects[currentProject].style.display = 'block';
+updateActiveDot(currentProject);
 
-// Rotate projects every 3.5 seconds
+// Rotate projects every 5 seconds
 let rotationInterval = setInterval(showNextProject, displayTime);
 
 // Event listeners for the arrows
@@ -47,9 +59,18 @@ document.querySelector('.right-arrow').addEventListener('click', () => {
     rotationInterval = setInterval(showNextProject, displayTime); // Restart automatic rotation
 });
 
-if (window.location.pathname.endsWith("/easteregg.html")) {
+// Add click functionality to dots
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(rotationInterval); // Reset rotation
+        showProject(index); // Show selected project
+        rotationInterval = setInterval(showNextProject, displayTime); // Restart automatic rotation
+    });
+});
 
-    setTimeout(function() {
+// Optional: Easter egg redirect
+if (window.location.pathname.endsWith("/easteregg.html")) {
+    setTimeout(() => {
         window.location.href = "/index.html";
     }, 5000);
 }
