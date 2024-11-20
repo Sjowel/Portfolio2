@@ -186,7 +186,7 @@ body, html {
     position: relative;
     flex-direction: column;
     gap: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 .project {
@@ -312,11 +312,13 @@ p {
     color: #fff8e6;
     position: absolute;
     right: 20px;
+    opacity: 0;
     transition: transform 0.3s ease-in-out;
     filter: hue-rotate(180deg) saturate(0.3) brightness(1.2);
 }
 
 .outcome-container:hover::after {
+    opacity: 1;
     transform: translateX(5px);
 }
   
