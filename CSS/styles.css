@@ -12,6 +12,15 @@ body, html {
     background-color: #fff9e8;
 }
 
+/* breedte van de pagina onder de landing image */
+.width-page{
+    position: absolute;
+    top: 850px;
+    left: 25%;
+    transform: translate(-20%, -20%);
+}
+
+/* Navigatie balk design */
 .navbar {
     background-color: rgba(168, 187, 181, 0.7);
     justify-content: space-evenly;
@@ -81,6 +90,7 @@ body, html {
     color: #fae9bc;
 }
 
+/* Landing page design */
 .landing-image {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #fff9e8 100%), url('/images/Maastricht.png');
     height: 100vh;
@@ -157,6 +167,7 @@ body, html {
     }
 }
 
+/* About tekst design */
 .about {
     margin-top: 50px;
     padding: 50px;
@@ -166,6 +177,7 @@ body, html {
     margin-bottom: 100px;
 }
 
+/* Project container design */
 .project-container {
     display: flex;
     justify-content: left;
@@ -187,9 +199,9 @@ body, html {
     padding: 20px;
     transition: transform 0.3s;
     height: 400px;
-    width: 800px;
     overflow: hidden;
     position: relative;
+    z-index: 10;
 }
 h1{ 
     color: #60ae96;
@@ -253,7 +265,7 @@ p {
 .circle-loader {
     position: absolute;
     top: 20px;
-    right: 250px;
+    right: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -272,7 +284,7 @@ p {
     }
 }
 
-
+/* Outcome knoppen design design */
 .outcome-container {
     display: flex;
     flex-direction: row;
@@ -342,7 +354,7 @@ p {
     font-size: 20px;
 }
 
-
+/* Scroll button design */
 #scrollToTopButton {
     position: fixed;
     bottom: 30px;
@@ -364,7 +376,7 @@ p {
     box-shadow: 0 5px 20px rgba(168, 187, 181, 0.7);
 }
 
-
+/* Arrow bij projecten design */
 .arrow {
     position: absolute;
     margin-left: 45px;
@@ -414,6 +426,7 @@ p {
     right: 20px;
 }
 
+/* Project pagina's design */
 .projectpage {
     padding-right: 350px;
     padding-left: 50px;
@@ -436,7 +449,7 @@ p {
     color: #417464;
 }
 
-
+/* Scrollbar design */
 ::-webkit-scrollbar {
     width: 15px;
     height: 15px;
@@ -461,7 +474,7 @@ p {
     box-shadow: 0px 0px 8px rgba(168, 187, 181, 0.7);
 }
 
-
+/* Bullets design */
 ul.custom-bullets li {
     list-style-type: none;
     padding-left: 25px;
@@ -477,75 +490,7 @@ ul.custom-bullets li::before {
     filter: hue-rotate(180deg) saturate(0.3) brightness(1.2)
 }
 
-.navbar1 {
-    background-color: rgba(255, 0, 0, 0.7);
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar1 ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar1 li {
-    margin: 0 15px;
-}
-
-.navbar1 a {
-    color: #1f3830;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-decoration: none;
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease-in-out;
-}
-
-.navbar1 a:hover {
-    text-decoration: underline;
-    color: #fff8e6;
-    text-shadow: 0 0 8px rgba(96, 174, 150, 1);
-}
-
-.navbar1 a:focus, .navbar a:active {
-    text-shadow: 0 0 20px 4px rgba(255, 165, 0, 0.8);
-    outline: none;
-}
-
-.navbar1 a::after {
-    content: '🔥';
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2em;
-    color: #fff8e6;
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s ease-in-out;
-    filter: hue-rotate(180deg) saturate(0.3) brightness(1.2);
-}
-
-.navbar1 a:hover::after {
-    opacity: 1; 
-    transform: translateX(5px) translateY(-50%) scale(1.3);
-}
-
-
-.navbar1 a:active {
-    transform: scale(1.05);
-    color: #fae9bc;
-}
-
+/* Easter egg pagina design */
 .easteregg{
     background-color: rgb(255, 145, 145);
 }
@@ -556,6 +501,135 @@ ul.custom-bullets li::before {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;      
+    align-items: center;  
 }
 
+.flame h1{
+    color: #ffbd5b;
+    animation: pulse 2s infinite;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                 0px 0px 20px rgba(255, 165, 0, 0.6),
+                 0px 0px 30px rgba(255, 0, 0, 0.6);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+    .smal-flame1 {
+        position: fixed; 
+        bottom: 400px; 
+        left: 100px;
+        font-size: 40px;
+        z-index: 1000;
+        animation: pulse 1s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame2 {
+        position: fixed; 
+        bottom: 370px; 
+        left: 750px;
+        font-size: 100px;
+        z-index: 1000;
+        animation: pulse 1.2s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame3 {
+        position: fixed; 
+        bottom: 420px; 
+        left: 1000px;
+        font-size: 60px;
+        z-index: 1000;
+        animation: pulse 1.3s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame4 {
+        position: fixed; 
+        bottom: 200px; 
+        left: 1200px;
+        font-size: 30px;
+        z-index: 1000;
+        animation: pulse 1.1s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame5 {
+        position: fixed; 
+        bottom: 100px; 
+        left: 100px;
+        font-size: 80px;
+        z-index: 1000;
+        animation: pulse 1.4s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame6 {
+        position: fixed; 
+        bottom: 80px; 
+        left: 700px;
+        font-size: 30px;
+        z-index: 1000;
+        animation: pulse 1.5s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame7 {
+        position: fixed; 
+        bottom: 100px; 
+        left: 1100px;
+        font-size: 50px;
+        z-index: 1000;
+        animation: pulse 1.6s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame8 {
+        position: fixed; 
+        bottom: 180px; 
+        left: 400px;
+        font-size: 40px;
+        z-index: 1000;
+        animation: pulse 1.7s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    .smal-flame9 {
+        position: fixed; 
+        bottom: 350px; 
+        left: 500px;
+        font-size: 40px;
+        z-index: 1000;
+        animation: pulse 1.8s infinite;
+        text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8),
+                     0px 0px 20px rgba(255, 165, 0, 0.6),
+                     0px 0px 30px rgba(255, 0, 0, 0.6);
+    }
+
+    

@@ -46,3 +46,10 @@ document.querySelector('.right-arrow').addEventListener('click', () => {
     showNextProject(); // Show next project
     rotationInterval = setInterval(showNextProject, displayTime); // Restart automatic rotation
 });
+
+if (window.location.pathname.endsWith("/easteregg.html")) {
+
+    setTimeout(function() {
+        window.location.href = "/index.html";
+    }, 5000);
+}
