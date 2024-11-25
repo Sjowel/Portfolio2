@@ -173,9 +173,12 @@ body, html {
 /* Project container design */
 .project-page {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    position: relative;
     height: 100vh;
+    width: 70%;
+    margin: 0 auto;
     flex-direction: column;
     gap: 20px;
     scroll-margin-top: 80px;
@@ -279,6 +282,56 @@ p {
     }
 }
 
+/* Arrow bij projecten design */
+.arrow {
+    position: absolute;
+    margin-left: 45px;
+    margin-right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(168, 187, 181, 0.7);
+    color: #fff8e6;
+    border: none;
+    border-radius: 10px;
+    border: 1.9px solid rgba(96, 174, 150, 1);
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgba(96, 174, 150, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.arrow:hover {
+    background-color: rgba(168, 187, 181, 1);
+    box-shadow: 0 5px 15px rgba(168, 187, 181, 0.7);
+}
+
+.arrow:active {
+    animation: flame 0.3s ease-out, grow 0.2s ease;
+}
+
+@keyframes flame {
+    0% {
+        box-shadow: 0 0 20px 4px rgba(255, 165, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 25px 6px rgba(255, 165, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 1px 10px rgba(96, 174, 150, 0.5);
+    }
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
 
 /* Outcome knoppen design design */
 .outcome-container {
@@ -372,56 +425,6 @@ p {
     background: rgba(168, 187, 181, 1);
     transition: 0.3s ease-in-out;
     box-shadow: 0 5px 20px rgba(168, 187, 181, 0.7);
-}
-
-/* Arrow bij projecten design */
-.arrow {
-    position: absolute;
-    margin-left: 45px;
-    margin-right: 45px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(168, 187, 181, 0.7);
-    color: #fff8e6;
-    border: none;
-    border-radius: 10px;
-    border: 1.9px solid rgba(96, 174, 150, 1);
-    padding: 10px 15px;
-    font-size: 30px;
-    cursor: pointer;
-    box-shadow: 0 1px 10px rgba(96, 174, 150, 0.5);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    z-index: 100;
-    box-sizing: border-box;
-}
-
-.arrow:hover {
-    background-color: rgba(168, 187, 181, 1);
-    box-shadow: 0 5px 15px rgba(168, 187, 181, 0.7);
-}
-
-.arrow:active {
-    animation: flame 0.3s ease-out, grow 0.2s ease;
-}
-
-@keyframes flame {
-    0% {
-        box-shadow: 0 0 20px 4px rgba(255, 165, 0, 0.8);
-    }
-    50% {
-        box-shadow: 0 0 25px 6px rgba(255, 165, 0, 0.6);
-    }
-    100% {
-        box-shadow: 0 1px 10px rgba(96, 174, 150, 0.5);
-    }
-}
-
-.left-arrow {
-    left: 20px;
-}
-
-.right-arrow {
-    right: 20px;
 }
 
 /* Project pagina's design */
