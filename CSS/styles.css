@@ -122,13 +122,13 @@ body, html {
     transform: translateX(-50%);
     z-index: 2;
     margin-top: 10px;
-    padding: 10px 30px;
+    padding: 10px 40px;
     background-color: #A8BBB5;
     color: #fff8e6;
     text-decoration: none;
     border-radius: 10px;
     border: 2px solid #60ae96;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.3s;
 
 }
@@ -428,14 +428,18 @@ p {
 
 /* Project pagina's design */
 .projectpage {
-    position: absolute;
-    top: 320px;
-    left: 350px;
-    transform: translate(-20%, -20%);
+    padding-top: 50px;
+    margin: auto;
+    width: 60%;
 }
 
 .projectpage h2 {
+    margin-top: 30px;
     font-size: 1.7em;
+}
+
+.projectpage h3{
+    margin-top: 30px;
 }
 
 .projectpage a {
@@ -653,3 +657,41 @@ ul.custom-bullets li::before {
                      0px 0px 20px rgba(255, 165, 0, 0.6),
                      0px 0px 30px rgba(255, 0, 0, 0.6);
     }
+
+    .outcome1{
+        margin: auto;
+        width: 70%;
+    }
+    
+    .outcome1 h2{
+        margin-top: 30px;
+    }
+
+    .outcome1 h3{
+        margin-top: 10px;
+    }
+      
+    .version-control-container {
+        display: flex; /* Zet de inhoud op een rij */
+        align-items: center; /* Zorg dat de tekst verticaal gecentreerd is met de afbeelding */
+        gap: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+        background-color: #C1CEC8 ;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px rgba(168, 187, 181, 0.5);
+      }
+      
+      .version-control-img {
+        width: 50%; /* Zorg dat de afbeelding 50% van de containerbreedte is */
+        height: auto; /* Houd de originele verhouding van de afbeelding */
+        border-radius: 25px;
+        
+      }
+      
+      .version-control-text {
+        flex: 1; /* Zorg dat de tekst de resterende ruimte inneemt */
+        font-size: 16px; /* Pas de lettergrootte aan indien nodig */
+        line-height: 1.6; /* Verhoog de leesbaarheid van de tekst */
+      }
+      
