@@ -191,7 +191,7 @@ body, html {
     height: 50px;
     border-radius: 50%;
     background-color: rgba(96, 174, 150, 1);
-    animation: fade-out 5s linear forwards;
+    animation: fade-out 3s linear forwards;
     opacity: 1;
 }
 
@@ -668,18 +668,19 @@ ul.custom-bullets li::before {
     }
 
     .outcome1 h3{
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-left: 30px;
     }
       
-    .version-control-container {
+    .version-control-container1 {
         display: flex; /* Zet de inhoud op een rij */
         align-items: center; /* Zorg dat de tekst verticaal gecentreerd is met de afbeelding */
         gap: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
-        background-color: #C1CEC8 ;
+        background-color: rgba(168, 187, 181, 0.7) ;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 25px;
-        box-shadow: 0px 0px 5px rgba(168, 187, 181, 0.5);
+        box-shadow: 0 1px 15px rgba(96, 174, 150, 0.5);
       }
       
       .version-control-img {
@@ -695,3 +696,13 @@ ul.custom-bullets li::before {
         line-height: 1.6; /* Verhoog de leesbaarheid van de tekst */
       }
       
+      .version-control-container2 {
+        display: flex; /* Zet de inhoud op een rij */
+        align-items: center; /* Zorg dat de tekst verticaal gecentreerd is met de afbeelding */
+        gap: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+        background-color: rgba(168, 187, 181, 1) ;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        box-shadow: 0 1px 15px rgba(96, 174, 150, 0.5);
+      }

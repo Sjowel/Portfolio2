@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const leftArrow = document.querySelector('.left-arrow');
     const rightArrow = document.querySelector('.right-arrow');
     let currentProject = 0;
-    const displayTime = 5000; // 5000ms = 5 seconds
+    const displayTime = 3000; // 5000ms = 5 seconds
     let rotationInterval;
 
     // Function to show the project at a given index
