@@ -673,9 +673,9 @@ ul.custom-bullets li::before {
     }
       
     .version-control-container1 {
-        display: flex; /* Zet de inhoud op een rij */
-        align-items: center; /* Zorg dat de tekst verticaal gecentreerd is met de afbeelding */
-        gap: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+        display: flex;
+        align-items: center;
+        gap: 20px;
         background-color: rgba(168, 187, 181, 0.7) ;
         padding: 20px;
         margin-bottom: 20px;
@@ -684,25 +684,40 @@ ul.custom-bullets li::before {
       }
       
       .version-control-img {
-        width: 50%; /* Zorg dat de afbeelding 50% van de containerbreedte is */
-        height: auto; /* Houd de originele verhouding van de afbeelding */
+        width: 50%;
+        height: auto;
         border-radius: 25px;
         
       }
       
       .version-control-text {
-        flex: 1; /* Zorg dat de tekst de resterende ruimte inneemt */
-        font-size: 16px; /* Pas de lettergrootte aan indien nodig */
-        line-height: 1.6; /* Verhoog de leesbaarheid van de tekst */
+        flex: 1; 
+        font-size: 16px; 
+        line-height: 1.6;
+      }
+
+      .version-control-text p{
+        font-size: 1.0;
       }
       
       .version-control-container2 {
-        display: flex; /* Zet de inhoud op een rij */
-        align-items: center; /* Zorg dat de tekst verticaal gecentreerd is met de afbeelding */
-        gap: 20px; /* Voeg ruimte toe tussen de afbeelding en de tekst */
+        display: flex;
+        align-items: center;
+        gap: 20px;
         background-color: rgba(168, 187, 181, 1) ;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 25px;
         box-shadow: 0 1px 15px rgba(96, 174, 150, 0.5);
       }
+
+      .outcome1 a {
+        color: rgba(96, 174, 150, 1);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .outcome1 a:hover {
+        color: rgba(96, 174, 150, 0.5);
+    }
