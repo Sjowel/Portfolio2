@@ -87,3 +87,32 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
 });
 
+// Open modal en toon de aangeklikte afbeelding
+function openModal(event) {
+    const modal = document.getElementById("imageModal");
+    const fullImage = document.getElementById("fullImage");
+    fullImage.src = event.target.src; // Zet de bron gelijk aan de aangeklikte afbeelding
+    modal.style.display = "block"; // Toon de modal
+}
+
+// Sluit de modal
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
+// Sluit de modal met de ESC-toets
+function handleKeyDown(event) {
+    if (event.key === "Escape") { // Controleer of de Escape-toets is ingedrukt
+        closeModal();
+    }
+}
+
+// Voeg klik-eventlisteners toe aan alle afbeeldingen met de class "modal-trigger"
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+modalTriggers.forEach(img => {
+    img.addEventListener("click", openModal);
+});
+
+// Voeg een eventlistener toe voor toetsenbord-gebeurtenissen
+document.addEventListener("keydown", handleKeyDown);
