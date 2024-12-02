@@ -97,15 +97,7 @@ function openModal(event) {
 
 // Sluit de modal
 function closeModal() {
-    const modal = document.getElementById("imageModal");
-    modal.style.display = "none";
-}
-
-// Sluit de modal met de ESC-toets
-function handleKeyDown(event) {
-    if (event.key === "Escape") { // Controleer of de Escape-toets is ingedrukt
-        closeModal();
-    }
+    document.getElementById("imageModal").style.display = "none";
 }
 
 // Voeg klik-eventlisteners toe aan alle afbeeldingen met de class "modal-trigger"
@@ -113,6 +105,3 @@ const modalTriggers = document.querySelectorAll(".modal-trigger");
 modalTriggers.forEach(img => {
     img.addEventListener("click", openModal);
 });
-
-// Voeg een eventlistener toe voor toetsenbord-gebeurtenissen
-document.addEventListener("keydown", handleKeyDown);
