@@ -801,3 +801,64 @@ ul.custom-bullets1 li::before {
     gap: 10px;
 
 }
+
+#videoplayer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Styling footer */
+footer {
+    background-color: rgba(168, 187, 181, 0.7); 
+    color: #ffffff; 
+    padding: 20px 15px;
+    text-align: center;
+    border-top: 2px solid #f1f1f1;
+    margin-top: 50px;
+  }
+  
+
+  footer p {
+    margin: 10px 0;
+  }
+  
+
+  footer .social-media {
+    list-style: none; 
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer .social-media li {
+    display: inline;
+  }
+  
+
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: rgba(96, 174, 150, 0.8);
+  }
+  
+  /* Responsieve aanpassing */
+  @media (max-width: 600px) {
+    footer {
+      font-size: 12px; /* Kleinere tekst op kleine schermen */
+    }
+  
+    footer .social-media {
+      flex-direction: column; /* Verticale weergave */
+      gap: 10px;
+    }
+  }
+  
